@@ -1,0 +1,24 @@
+class Solution {
+public:
+    int sortingMethod(vector<int>&nums){
+        sort(nums.begin(),nums.end());
+        for(int i=0;i<nums.size();i++){
+            if(i==nums[i]) continue;
+            else 
+                return i;
+        }
+        return nums.size();
+    }
+    int missingNumber(vector<int>& nums) {
+        // int n = nums.size();
+        // int sum = 0;
+        // for(int i=0;i<n;i++){
+        //     sum=sum+nums[i];
+        // }
+        // int totalSum=n*(n+1)/2;
+        // // if sum<totalSum;
+        // int ans = totalSum - sum;
+        // return ans;
+        return sortingMethod(nums);
+    }
+};
